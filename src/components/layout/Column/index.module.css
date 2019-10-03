@@ -1,0 +1,40 @@
+.column {
+  background-color: #efefef;
+  padding: 0.5rem;
+  border-radius: 6px;
+  flex: 0 0 20vw;
+  margin-right: 2rem;
+  border: 1px solid #dadada;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 480px) {
+  .column {
+    flex: 0 0 40vw;
+  }
+}
+
+.columnHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.columnIcon {
+  display: block;
+  align-self: center;
+  font-size: 1.5em;
+}
+
+.column:last-of-type {
+  margin-right: 0;
+}
+
+.columnCardList {
+  overflow-y: auto;
+  min-height: 80px;
+}
+
+.columnCardList:empty:hover {
+  background-color: #dedede;
+}
